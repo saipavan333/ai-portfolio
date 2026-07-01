@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+xgboost          # optional: train.py falls back to scikit-learn HistGBM if missing
+optuna           # optional: hyperparameter tuning (stretch goal)
+shap             # optional: explainability (stretch goal)
+wandb            # optional: experiment tracking
+matplotlib
+pytest

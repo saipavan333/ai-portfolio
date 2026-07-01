@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.ckpt
+*.pt
+*.bin
+data/
+artifacts/
+wandb/
+.ipynb_checkpoints/
+.DS_Store
+*.joblib
