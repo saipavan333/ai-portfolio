@@ -2,28 +2,36 @@
 
 *ETL to AI Engineer: A Portfolio-First Blueprint - 15 projects from classical ML to agentic & reasoning AI (2026 edition)*
 
-## Mindset (read this first)
+## Principles I'm following
 
-### You are not starting from zero
-You have spent 10 years doing the single hardest, least glamorous, most in-demand part of AI: moving data reliably. In 2026 employers screen for "production deployment evidence first" and the #1 bottleneck in real AI teams is data and operations, not model math. Your ETL background (SQL, orchestration, pipelines, reliability, monitoring) is a genuine head start. The plan below deliberately leans into that edge instead of pretending you are a fresh grad.
+### Building on a data-engineering foundation
+I spent ~10 years on the hardest, most in-demand part of AI: moving data reliably. In 2026 the
+bottleneck in most AI teams is data and operations, not model math - so this plan leans into that
+foundation (SQL, orchestration, pipelines, reliability, monitoring) instead of starting from zero.
 
 ### Portfolio-first, not course-first
-Tutorials are consumed and forgotten; artifacts get you hired. Every project here ends with a public, clickable proof-of-work: a GitHub repo, a live Hugging Face Space, a Kaggle notebook, a W&B report, or a Docker image. By the end you have ~15 such artifacts plus one flagship capstone. A hiring manager should be able to click and see working systems within 30 seconds.
+Every project ends with a public, clickable proof-of-work: a repo, a live Hugging Face Space, a
+Kaggle notebook, a W&B report, or a Docker image - ~15 artifacts plus one flagship capstone. Anyone
+should be able to click and see a working system within 30 seconds.
 
-### Build in public
-After each project, write a short (300-500 word) post on LinkedIn or a blog: what you built, one thing that broke, one thing you learned. This compounds. Recruiters find the posts; the posts link to the repos; the repos prove the skill. Three months of this is worth more than any certificate.
+### Building in public
+Each project gets a short write-up: what I built, one thing that broke, one thing I learned. The
+posts link to the repos; the repos prove the skill.
 
 ### Spaced difficulty, with a spine
-The 15 projects escalate: tabular ML -> deep learning -> NLP/transformers -> LLMs/RAG/fine-tuning -> agents/multimodal -> production & capstone. Each phase reuses skills from the last. Resist the urge to skip to agents on day one; the foundations are what make the flashy stuff debuggable.
+The 15 projects escalate: tabular ML -> deep learning -> NLP/transformers -> LLMs/RAG/fine-tuning ->
+agents/multimodal -> production & capstone. Each phase reuses the last; the foundations are what make
+the advanced work debuggable.
 
 ### Definition of Done
-Every project has an explicit checklist. AI work is a swamp of 'I could tune this forever.' The checklist tells you when to stop, ship, and move on. Shipping 15 'good enough and public' projects beats polishing 2 forever.
+Every project has an explicit checklist so it ships instead of being polished forever. Fifteen
+"good enough and public" projects beat two perfect ones.
 
-## Your five tools, mapped to the journey
+## The five tools, across the program
 
 | Tool | Role | How you use it across the program |
 |---|---|---|
-| **GitHub** | Code + history | Home base for all code. You will create one dedicated branch, ai-portfolio (commands in SETUP), and one folder per project. Use it for clean READMEs, GitHub Actions CI (lint + test on every push), and as the URL you put on your resume. A green-commit history that tells a story is itself a portfolio signal. |
+| **GitHub** | Code + history | Home base for all code. You will create one dedicated branch, ai-portfolio (commands in SETUP), and one folder per project. Use it for clean READMEs, GitHub Actions CI (lint + test on every push), and as the URL you put on a resume. A green-commit history that tells a story is itself a portfolio signal. |
 | **Kaggle** | Data + free GPUs | Your free compute and dataset source. Kaggle Notebooks give ~30 GPU hrs/week (T4/P100) at no cost - enough for most of this plan. Use Datasets for inputs, Notebooks for experiments you want to show, and 2-3 Competitions to benchmark yourself against a public leaderboard (a great, objective resume line). |
 | **Hugging Face** | Models + demos | The center of gravity of open AI. You will (a) pull models/datasets with the transformers & datasets libraries, (b) push your fine-tuned models and datasets to the Hub, and (c) deploy live demos as Spaces (Gradio). A working Space is the single most impressive thing a non-technical hiring manager can click. |
 | **Weights & Biases** | Experiment tracking | Your lab notebook. Log every training run (loss, metrics, configs, system stats), run hyperparameter Sweeps, register models, and publish W&B Reports. 'I track and compare experiments rigorously' is exactly the MLOps maturity employers want to see, and it maps directly onto the discipline you already have from data pipelines. |
@@ -131,11 +139,11 @@ Serve a model like a real production service: high-throughput inference, an API 
 Combine everything into one real product: a deployed, monitored, agentic application solving a genuine problem - ideally tied to your domain.  
 -> [Full blueprint](15-capstone-agentic-product/README.md)
 
-## After the program (turning this into a job)
+## Turning this into a role
 
-- **Resume:** lead with the capstone (P15) + P7 (RAG) + P14 (LLMOps). Each bullet = artifact link + a metric.
-- **Pin** your 6 best repos on GitHub; keep the `ai-portfolio` branch clean and documented.
-- **Spaces:** keep 3-4 live HF Spaces - these are what non-technical interviewers click.
-- **Narrative:** 'ETL engineer who can put AI in production' - lean on P2, P7, P9, P14 (data + ops).
-- **Kaggle:** a couple of competition ranks make great objective resume lines.
-- **Write-ups:** one post per project; a final 'what I built in 6 months' summary post.
+- **Resume:** lead with the capstone (P15), RAG (P7), and LLMOps (P14). Each bullet = an artifact link + a metric.
+- **Pin** the 6 best repos; keep this repo clean and documented.
+- **Spaces:** keep 3-4 live Hugging Face Spaces - the fastest thing for a non-technical interviewer to click.
+- **Narrative:** "a data engineer who can put AI into production" - anchored by P2, P7, P9, P14 (data + ops).
+- **Kaggle:** a couple of competition ranks are objective, credible resume lines.
+- **Write-ups:** one post per project, plus a final summary of what I built.

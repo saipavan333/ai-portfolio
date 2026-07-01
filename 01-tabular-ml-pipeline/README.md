@@ -7,7 +7,7 @@
 ---
 
 ## Why (the point of this project)
-This is the fastest way to convert your existing strength into an AI artifact. 80% of enterprise ML is still tabular (churn, fraud, pricing, demand). You already understand data better than most ML beginners, so start where you are strongest and get a win on the board. It also forces the habits the rest of the program relies on: train/validation/test discipline, leakage avoidance, metrics, and reproducibility.
+This is the fastest way to turn existing data skills into an AI artifact. 80% of enterprise ML is still tabular (churn, fraud, pricing, demand). You already understand data better than most ML beginners, so start where you are strongest and get a win on the board. It also forces the habits the rest of the program relies on: train/validation/test discipline, leakage avoidance, metrics, and reproducibility.
 
 ## What you will build
 A repo + Kaggle notebook that takes a raw tabular dataset and produces a trained, evaluated model behind a single `predict()` function. You will compare a linear baseline, a random forest, and gradient boosting (XGBoost/LightGBM), pick the best by a proper validation scheme, and explain it with feature importance / SHAP.
@@ -44,7 +44,7 @@ Python, pandas, scikit-learn, XGBoost/LightGBM, Optuna, SHAP, Weights & Biases
 | **Weights & Biases** | Log every CV run and tuning trial; embed a W&B comparison chart in the README. |
 | **Docker** | Optional here - add a Dockerfile that runs training end-to-end for reproducibility practice. |
 
-## Where it goes in your portfolio
+## Portfolio artifact
 GitHub repo (pinned) + public Kaggle notebook + a W&B report link. Resume line: 'Built a reproducible tabular ML pipeline (AUC X.XX) with leakage-safe preprocessing and experiment tracking.'
 
 ## Definition of Done

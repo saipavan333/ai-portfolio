@@ -1,7 +1,7 @@
 # Setup Guide
 
 ## 0. One-time: create your dedicated AI branch
-You asked specifically for a new GitHub branch for AI projects. Two clean options.
+This repo is published as a set of AI projects. Two clean ways to host it:
 
 ### Option A - a branch inside an existing repo
 ```bash

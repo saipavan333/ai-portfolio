@@ -69,7 +69,7 @@ def split_xy(df: pd.DataFrame, target: str = TARGET):
 
 
 def basic_checks(X: pd.DataFrame, y: pd.Series) -> None:
-    """Cheap guards that catch the most common data bugs early (your ETL instinct)."""
+    """Cheap guards that catch the most common data bugs early (a data-engineering instinct)."""
     assert len(X) == len(y), "X and y must have the same number of rows"
     assert y.nunique() == 2, "this project expects a BINARY target"
     rate = float(y.mean())
