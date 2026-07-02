@@ -64,8 +64,31 @@ GitHub repo (pinned) + public Kaggle notebook + a W&B report link. Resume line: 
 - [Kaggle: Intro to ML & Intermediate ML](https://www.kaggle.com/learn)
 - [W&B quickstart](https://docs.wandb.ai/quickstart)
 
-## Results (fill this in as you build)
-- **Headline metric:** _e.g. AUC / F1 / accuracy / p95 latency_
-- **Artifact links:** GitHub _ | HF _ | Kaggle _ | W&B _ | Demo _
-- **One thing that broke and how I fixed it:** _..._
-- **Build-in-public post:** _link_
+## Results
+
+Trained on the [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+dataset (7,043 customers). Candidate models were compared with 5-fold cross-validation on the
+training split; the winner was scored once on a held-out 20% test set.
+
+| Model | CV ROC-AUC |
+|---|---|
+| Dummy (majority class) | 0.500 |
+| Logistic regression | **0.846 ± 0.014** |
+| XGBoost (untuned) | 0.839 ± 0.012 |
+
+**Held-out test ROC-AUC: 0.842** (logistic regression). Overall accuracy 0.81; on the churn class,
+precision 0.66 / recall 0.56 — it catches ~56% of churners, which a retention team would tune via
+the decision threshold.
+
+**Artifacts:** [W&B run](https://wandb.ai/saipavanue-indian-institue-of-technology-jodhpur/ai-portfolio-p01) · [Kaggle notebook](add after publishing) · code in `src/`
+
+**Notes**
+- **A bug I fixed:** the target loaded as a pandas `string` dtype, so the Yes/No → 0/1 conversion was
+  silently skipped and the metric step failed. Fixed by checking `pd.api.types.is_numeric_dtype`
+  instead of `== object`.
+- **Leakage check:** all preprocessing (impute / scale / encode) lives inside the sklearn `Pipeline`,
+  so it's re-fit per CV fold — no test information leaks into training.
+- **Observation:** logistic regression edged untuned XGBoost, so the churn signal here is largely
+  linear. Tuning XGBoost (Optuna) and threshold-tuning for higher recall are the obvious next gains.
+
+**Next:** Optuna hyperparameter tuning + SHAP feature importance.
