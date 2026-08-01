@@ -1,0 +1,8 @@
+numpy
+transformers
+accelerate
+pillow
+torch
+gradio
+wandb
+jsonschema

@@ -1,0 +1,6 @@
+numpy
+scikit-learn      # only for load_digits (a tiny built-in dataset, no download)
+matplotlib
+torch             # for torch_net.py (the autograd comparison)
+torchvision
+wandb             # optional: log loss/accuracy curves

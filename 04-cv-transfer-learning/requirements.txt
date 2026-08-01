@@ -1,0 +1,9 @@
+numpy
+torch
+torchvision
+timm
+transformers
+gradio
+huggingface_hub
+wandb
+scikit-learn

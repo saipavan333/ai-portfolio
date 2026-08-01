@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+dvc                # data + pipeline version control
+great-expectations # optional: heavier data validation (we hand-roll a gate in data_quality.py)
+ruff               # linter used by CI
+pytest
+wandb              # optional: track feature-set versions

@@ -1,0 +1,9 @@
+numpy
+transformers
+peft
+trl
+bitsandbytes
+datasets
+accelerate
+wandb
+huggingface_hub

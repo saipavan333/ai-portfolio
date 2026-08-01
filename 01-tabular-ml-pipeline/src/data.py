@@ -1,4 +1,4 @@
-"""
+﻿"""
 data.py - load and sanity-check the dataset.
 
 WHAT : turns a raw CSV (or synthetic demo data) into a clean (X, y) plus the lists of
@@ -61,7 +61,7 @@ def make_demo_data(n: int = 2000, seed: int = 42) -> pd.DataFrame:
 def split_xy(df: pd.DataFrame, target: str = TARGET):
     """Return X, y, numeric-column names, categorical-column names."""
     # why: convert a Yes/No target to 1/0 so metrics like AUC work
-    y = (df[target] == "Yes").astype(int) if df[target].dtype == object else df[target]
+    y = (df[target] == "Yes").astype(int) if not pd.api.types.is_numeric_dtype(df[target]) else df[target]
     X = df.drop(columns=[target])
     num_cols = X.select_dtypes(include="number").columns.tolist()
     cat_cols = X.select_dtypes(exclude="number").columns.tolist()

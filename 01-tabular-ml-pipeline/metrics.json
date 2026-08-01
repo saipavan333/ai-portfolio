@@ -1,0 +1,9 @@
+{
+  "best_model": "logistic_regression",
+  "test_auc": 0.8419,
+  "cv_auc": {
+    "dummy_majority": 0.5,
+    "logistic_regression": 0.8456,
+    "xgboost": 0.839
+  }
+}

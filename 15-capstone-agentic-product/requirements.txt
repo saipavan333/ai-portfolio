@@ -1,0 +1,11 @@
+scikit-learn
+numpy
+# productionise with:
+langgraph
+langchain
+llama-index
+transformers
+fastapi
+uvicorn
+gradio
+wandb

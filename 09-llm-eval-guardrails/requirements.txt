@@ -1,0 +1,9 @@
+scikit-learn
+numpy
+pytest
+# production options:
+promptfoo
+deepeval
+presidio-analyzer
+presidio-anonymizer
+langfuse

@@ -1,0 +1,16 @@
+stages:
+  features:
+    cmd: python -m src.features_stage
+    deps:
+      - data/raw
+      - src/features.py
+    outs:
+      - data/features
+  train:
+    cmd: python -m src.train
+    deps:
+      - data/features
+      - src/train.py
+    metrics:
+      - metrics.json:
+          cache: false

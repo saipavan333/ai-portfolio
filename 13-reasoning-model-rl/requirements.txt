@@ -1,0 +1,7 @@
+numpy
+trl
+transformers
+peft
+datasets
+accelerate
+wandb

@@ -1,0 +1,13 @@
+scikit-learn
+numpy
+llama-index
+llama-index-embeddings-huggingface
+sentence-transformers
+chromadb
+rank-bm25
+ragas
+fastapi
+uvicorn
+gradio
+pypdf
+wandb
