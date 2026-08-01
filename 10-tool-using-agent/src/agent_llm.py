@@ -37,7 +37,7 @@ def main():
     agent = build_agent()
     out = agent.invoke({"messages": [("user", "What is 23*19 plus the population of France?")]})
     print(out["messages"][-1].content)
-    # PRODUCTION TODO: max-steps + cost budget, tool allow-list, structured tracing, task-success eval.
+    # TODO: max-steps + cost budget, tool allow-list, structured tracing, task-success eval.
 
 
 if __name__ == "__main__":

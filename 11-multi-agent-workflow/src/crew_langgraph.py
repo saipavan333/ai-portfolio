@@ -45,7 +45,7 @@ def build_app():
 def main():
     app = build_app()
     print(app.invoke({"goal": "Write a brief on renewable energy."})["draft"])
-    # PRODUCTION TODO: budget iterations + cost, run researchers in parallel, add a human-approval node.
+    # TODO: budget iterations + cost, run researchers in parallel, add a human-approval node.
 
 
 if __name__ == "__main__":

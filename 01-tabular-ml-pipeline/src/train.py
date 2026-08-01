@@ -118,7 +118,7 @@ def main():
         run.log({"test_auc": test_auc})
         run.finish()
 
-    # YOUR TURN: (1) tune the GBM with Optuna; (2) add a SHAP summary plot;
+    # Extend: (1) tune the GBM with Optuna; (2) add a SHAP summary plot;
     #            (3) try class_weight / threshold tuning for the imbalance.
 
 

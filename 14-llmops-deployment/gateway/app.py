@@ -32,6 +32,6 @@ def chat(body: dict, authorization: str = Header(default="")):
         raise HTTPException(401, "invalid API key")          # auth
     if not rate_ok():
         raise HTTPException(429, "rate limit exceeded")      # rate limit
-    # PRODUCTION TODO: proxy `body` to the vLLM server (http://vllm:8000/v1/chat/completions),
+    # TODO: proxy `body` to the vLLM server (http://vllm:8000/v1/chat/completions),
     # log latency/tokens/cost to Prometheus, and return the response.
     return {"status": "ok", "note": "wire up the vLLM proxy here"}

@@ -40,7 +40,7 @@ def main():
     args = ap.parse_args()
     engine = build_engine(args.docs)
     print(engine.query("How long do refunds take?"))   # grounded, cited answer
-    # PRODUCTION TODO: add hybrid search (BM25 + vectors) + a cross-encoder re-ranker; RAGAS eval.
+    # TODO: add hybrid search (BM25 + vectors) + a cross-encoder re-ranker; RAGAS eval.
 
 
 if __name__ == "__main__":

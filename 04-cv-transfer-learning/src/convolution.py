@@ -56,7 +56,7 @@ def main() -> None:
     assert edges_x.max() > 1.0, "edge filter should produce a strong response at edges"
     assert blurred.max() <= img.max() + 1e-6, "blur should not amplify beyond the input"
     print("[conv] OK - convolution behaves as expected")
-    # YOUR TURN: design your own 3x3 kernel and see what it detects.
+    # Extend: design your own 3x3 kernel and see what it detects.
 
 
 if __name__ == "__main__":

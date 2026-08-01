@@ -1,4 +1,4 @@
-﻿"""
+"""
 data.py - load and sanity-check the dataset.
 
 WHAT : turns a raw CSV (or synthetic demo data) into a clean (X, y) plus the lists of

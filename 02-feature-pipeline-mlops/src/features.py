@@ -28,4 +28,4 @@ def make_features(df: pd.DataFrame) -> pd.DataFrame:
     if "Contract" in out.columns:
         out["is_month_to_month"] = (out["Contract"] == "Month-to-month").astype(int)
     return out
-    # YOUR TURN: add more row-local features and re-measure the lift in train.py.
+    # Extend: add more row-local features and re-measure the lift in train.py.

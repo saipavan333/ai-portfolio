@@ -46,7 +46,7 @@ descent nudges every weight a small step in the DOWNHILL direction:
 `weight -= learning_rate * gradient`. Repeat thousands of times and the loss falls.
 
 **The learning rate.** The step size. Too big and training diverges (overshoots); too small and
-it crawls. Ours is 0.5 for the NumPy net. (`# YOUR TURN` in the code: try 0.1 and 1.0.)
+it crawls. Ours is 0.5 for the NumPy net. (try 0.1 and 1.0 in the code.)
 
 **Backpropagation = the chain rule.** To update a weight we need its gradient. The chain rule
 lets us compute gradients layer by layer, from the output back to the input, reusing work.

@@ -18,7 +18,7 @@ textbook you can re-open in 2027, 2028, and beyond. Read this once.
 3. **The code in `src/` etc. - the worked example (the HOW).**
    Every file is complete, runnable, and **heavily commented**. Comments are written to be
    read like prose: each section says *why* it exists, not just *what* it does. Banners
-   like `# === STEP 3: ... ===` mark the flow. `# YOUR TURN:` marks where to experiment.
+   like `# === STEP 3: ... ===` mark the flow. `# Extend:` marks where to experiment.
 
 > Rule of thumb: **README to decide, LESSON to understand, code to do.**
 
@@ -28,7 +28,7 @@ textbook you can re-open in 2027, 2028, and beyond. Read this once.
   fits the pipeline, WHERE it sits in the flow.
 - **`# === STEP n: ... ===`** banners = the flow, in order.
 - **Inline `# why:`** comments = the reasoning behind a non-obvious choice.
-- **`# YOUR TURN:`** = a safe place to tweak and learn by experiment.
+- **`# Extend:`** = a safe place to tweak and learn by experiment.
 - **`if __name__ == "__main__":`** = how to run the file directly.
 
 ## A study method that actually sticks

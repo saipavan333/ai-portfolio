@@ -118,7 +118,7 @@ def main():
 
     # === STEP 4: final score ==============================================
     print(f"FINAL test accuracy: {(net.predict(Xte) == yte).mean():.3f}")
-    # YOUR TURN: add a second hidden layer; try lr=0.1 vs 1.0; add L2 weight decay.
+    # Extend: add a second hidden layer; try lr=0.1 vs 1.0; add L2 weight decay.
 
 
 if __name__ == "__main__":

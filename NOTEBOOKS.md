@@ -1,6 +1,6 @@
-# Notebooks Index - 15 self-explanatory teaching notebooks
+# Notebooks Index - 15 teaching notebooks
 
-Every project ships an **executed, per-cell-explained Kaggle notebook** in its `notebooks/` folder.
+Every project ships an **executed, annotated Kaggle notebook** in its `notebooks/` folder.
 Each one teaches the topic from scratch in plain English, has **real rendered diagrams**, and runs
 its concept demo with lightweight tools (NumPy/scikit-learn) so it works anywhere. The heavy
 GPU/LLM training is included as copy-paste-ready blocks for a Kaggle GPU.

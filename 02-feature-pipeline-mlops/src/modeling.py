@@ -1,4 +1,4 @@
-﻿"""
+"""
 modeling.py - the same leakage-safe pipeline idea as Project 01, kept local so this repo
 stands alone. split_xy() separates inputs from target and detects column types.
 """
@@ -25,4 +25,3 @@ def build_pipeline(num, cat, model):
                           ("oh", OneHotEncoder(handle_unknown="ignore"))]), cat),
     ])
     return Pipeline([("pre", pre), ("model", model)])
-
